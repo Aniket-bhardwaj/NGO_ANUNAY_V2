@@ -1,0 +1,186 @@
+#main-donate {
+    min-height: 100vh;
+    padding: 120px 20px 80px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/donate-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donate-hero {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.donate-hero h1 {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.donate-hero p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.donation-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.donation-methods, .donation-form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.method-card {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.method-card:hover {
+    transform: translateY(-5px);
+}
+
+.method-card h3 {
+    color: #81864a;
+    font-family: 'Gilroy';
+    margin-bottom: 15px;
+}
+
+.donation-form form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.form-group input, 
+.form-group select,
+.form-group textarea {
+    padding: 12px 15px;
+    border: 2px solid #81864a;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: 'Poppins';
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(129, 134, 74, 0.3);
+}
+
+.important-note {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(129, 134, 74, 0.1);
+    border-left: 4px solid #81864a;
+    border-radius: 8px;
+}
+
+.donate-footer {
+    margin-top: 60px;
+    text-align: center;
+    font-family: 'Poppins';
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .donation-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .donate-hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .donate-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .donation-methods, 
+    .donation-form {
+        padding: 20px;
+    }
+}
+
+
+
+/* donate button  */
+
+.donate-btn {
+    background: #81864a;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.donate-btn:hover {
+    background: #6d713c;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(129, 134, 74, 0.3);
+}
+
+.donate-btn i {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.donate-btn:hover i {
+    transform: translateX(3px);
+}
+
+
+
+.donation-form{
+    z-index: 11;
+}
+
+.donate-footer{
+    z-index: 11;
+}
+
+.donation-methods{
+    z-index: 11;
+}

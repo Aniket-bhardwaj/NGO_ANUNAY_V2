@@ -1,0 +1,423 @@
+/* aboutus.css - Responsive Styles */
+
+/* Medium devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+    /* Founder Section */
+    #founder {
+        flex-direction: column;
+        height: auto;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    #founder img {
+        height: 300px;
+        width: 300px;
+        margin-bottom: 30px;
+    }
+
+    #founder-content {
+        width: 100%;
+    }
+
+    /* Inspiration Section */
+    #inspiration {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    #inspiration img {
+        height: 300px;
+        width: 300px;
+        margin-top: 30px;
+    }
+
+    #inspiration-content {
+        width: 100%;
+    }
+
+    /* Mission/Vision Cards */
+    #mission-vision {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 50px 20px;
+        height: auto;
+    }
+
+    .about-card {
+        height: 400px;
+        width: 400px;
+        border-radius: 30px;
+    }
+
+    .about-card-overlay {
+        padding-top: 100px;
+    }
+}
+
+/* Small devices (phones, 480px and down) */
+@media (max-width: 480px) {
+    /* Founder & Inspiration Sections */
+    #founder img,
+    #inspiration img {
+        height: 250px;
+        width: 250px;
+    }
+
+    #founder h3,
+    #inspiration h3 {
+        font-size: 2.5rem;
+    }
+
+    #founder p,
+    #inspiration p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    /* Mission/Vision Cards */
+    .about-card {
+        height: 300px;
+        width: 90%;
+        border-radius: 20px;
+    }
+
+    .about-card-overlay {
+        padding: 20px;
+        padding-top: 60px;
+    }
+
+    .about-card-overlay h4 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .about-card-overlay p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    /* Navigation Adjustments */
+    #nav {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    #nav h4 {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+        color: white;
+        font-size: 24px;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 380px) {
+    .about-card {
+        height: 280px;
+    }
+
+    #founder h3,
+    #inspiration h3 {
+        font-size: 2rem;
+    }
+
+    .about-card-overlay h4 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Landscape Orientation Adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+    #founder,
+    #inspiration {
+        padding: 30px 20px;
+    }
+
+    #founder img,
+    #inspiration img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .about-card {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+/* Tablet Landscape */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    #founder-content,
+    #inspiration-content {
+        width: 60%;
+    }
+
+    .about-card {
+        height: 500px;
+        width: 500px;
+    }
+}
+
+/* Add vertical spacing between sections */
+#page2-about,
+#page3-about,
+#page4-about {
+    padding: 5vh 0;
+    margin: 5vh 0;
+    position: relative;
+    z-index: 10;
+}
+
+/* Founder Section */
+#founder {
+    margin: 8vh 0;
+}
+
+/* Inspiration Section */
+#inspiration {
+    margin: 8vh 0;
+}
+
+/* Mission/Vision Section */
+#mission-vision {
+    margin: 8vh 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #page2-about,
+    #page3-about,
+    #page4-about {
+        padding: 3vh 0;
+        margin: 3vh 0;
+    }
+
+    #founder,
+    #inspiration,
+    #mission-vision {
+        margin: 5vh 0;
+        padding: 30px 20px;
+    }
+
+    .about-card {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #page2-about,
+    #page3-about,
+    #page4-about {
+        padding: 15vh 0;
+        margin: 15vh 0;
+    }
+
+    #founder,
+    #inspiration {
+        margin: 4vh 0;
+        padding: 20px 15px;
+    }
+
+   
+
+    #mission-vision {
+        margin: 15vh 0;
+        padding: 0 10px;
+    }
+    #page4-about{
+        margin-top: 50vh;
+    }
+
+    .about-card {
+        margin: 15px 0;
+    }
+}
+
+
+
+/* Cinematic Section Styles */
+#page1-about {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.cinematic-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    filter: grayscale(20%) contrast(110%);
+}
+
+.cinematic-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0,0,0,0.8) 30%, transparent 100%);
+    z-index: 2;
+}
+
+.cinematic-content {
+    position: relative;
+    z-index: 11;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+    color: white;
+}
+
+.cinematic-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.cinematic-content .line {
+    display: block;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+/* Gallery CTA Button */
+.gallery-cta {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, #81864a 0%, #a28c52 100%);
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.3),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.gallery-cta:hover::before {
+    left: 100%;
+}
+
+.gallery-cta:hover {
+    transform: translateY(-3px);
+}
+
+.arrow {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    transition: transform 0.3s ease;
+}
+
+.gallery-cta:hover .arrow {
+    transform: translateX(5px);
+}
+
+/* Animations */
+.reveal .line {
+    animation: textReveal 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+@keyframes textReveal {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cinematic-content h1 {
+        font-size: 3rem;
+    }
+    
+    .gallery-cta {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cinematic-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .gallery-cta {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+
+/* Footer Styles */
+#about-footer {
+    background-color: #080807;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+}
+
+#about-footer p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    #about-footer {
+        padding: 15px 0;
+    }
+    
+    #about-footer p {
+        font-size: 0.8rem;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #about-footer p {
+        font-size: 0.7rem;
+    }
+}
+
+
